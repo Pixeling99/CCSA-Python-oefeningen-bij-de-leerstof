@@ -1,2 +1,22 @@
 def zoek_binair(zoekItem,rij):
-    pass
+    l = 0;
+    r = len(rij) - 1;
+    
+    while l <= r:
+        m = (l + r) // 2;
+        print("l = ", l, "r = ", r, "m = ", m, "rij[m] = ", rij[m])
+        
+        if rij[m] == zoekItem:
+            print("Gevonden op index ", m)
+            return
+        elif rij[m] > zoekItem:
+            r = m - 1
+        
+        else:
+            l = m + 1
+        
+        
+print("Niet gevonden")
+
+index = zoek_binair(70, [0, 10, 20, 30, 40, 50, 60, 70, 80, 90])
+print(f"index = {index}")

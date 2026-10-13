@@ -9,11 +9,15 @@ def zoek_binair(zoekItem,rij):
         if rij[m] == zoekItem:
             print("Gevonden op index ", m)
             return m
+        
+        if rij[m] < zoekItem:
+            l = m + 1
+        
         elif rij[m] > zoekItem:
             r = m - 1
         
         else:
-            l = m + 1
+            m = -1
         
         
 

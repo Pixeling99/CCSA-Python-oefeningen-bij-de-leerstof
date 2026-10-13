@@ -10,7 +10,7 @@ def selection_sort_vooraan(a):
                 index_klein = j
             
         a[i], a[index_klein] = a[index_klein], a[i]
-   
+        print(a)
    
    
    

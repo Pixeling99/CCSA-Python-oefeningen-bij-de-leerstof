@@ -8,7 +8,7 @@ def zoek_binair(zoekItem,rij):
         
         if rij[m] == zoekItem:
             print("Gevonden op index ", m)
-            return
+            return m
         elif rij[m] > zoekItem:
             r = m - 1
         
@@ -16,7 +16,6 @@ def zoek_binair(zoekItem,rij):
             l = m + 1
         
         
-print("Niet gevonden")
 
 index = zoek_binair(70, [0, 10, 20, 30, 40, 50, 60, 70, 80, 90])
 print(f"index = {index}")

@@ -7,7 +7,7 @@ def selection_sort_vooraan(a):
         
         for j in range(i + 1, n):
             if a[j] < a[index_klein]:
-                j = index_klein
+                index_klein = j
             
         a[i], a[index_klein] = a[index_klein], a[i]
    
